@@ -1,0 +1,43 @@
+#quote-box {
+  width: 40rem; /* Fixed width */
+  height: 25rem; /* Fixed height; adjust based on your largest quote */
+  margin: auto; /* Center the quote box horizontally */
+  border-radius: 0.25rem;
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will create space between your content and the buttons */
+  overflow-y: auto; /* Allows scrolling if the content exceeds the container size */
+}
+
+#text {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* Use this to ensure that the line breaks properly */
+  margin-bottom: 1rem; /* Adjust spacing below quote text */
+}
+
+#author {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-bottom: 2rem; /* Adjust spacing below author */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-quote, #tweet-quote {
+  margin: 0.5rem 0; /* Adds margin at the top and bottom only */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  align-self: center; /* This ensures the button is centered in its container */
+}
+
+/* Add a bit of spacing between buttons */
+#new-quote {
+  margin-bottom: 1rem; /* Adds space below the new quote button */
+}
